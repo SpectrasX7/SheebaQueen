@@ -74,14 +74,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow` [🤗](https://telegra.ph/file/b222e851d7c395223e37d.jpg) `My name is` *Sheeba*
+`Hellow` [🤗](https://telegra.ph/file/9346deb7942bf572158d6.jpg) `My name is` *Stevia*
 `I'm here to help in managing your Kingdoms! Hit` *📚Commands*   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add Sheeba The Queen To Your Group ➕️", url="t.me/Sheeba_Queenbot?startgroup=true"),
+            text="➕️ Add Stevia Robot To Your Group ➕️", url="t.me/Sheeba_Queenbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Whisper-Message",switch_inline_query_current_chat=""),
@@ -96,11 +96,11 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [Sheeba Queen](https://telegra.ph/file/b222e851d7c395223e37d.jpg)
+`Hi.. I'm` [Stevia Robot](https://telegra.ph/file/9346deb7942bf572158d6.jpg)
 `Click on the buttons below to get documentation about specific modules..`"""
 
 
-Sheeba_IMG = "https://telegra.ph/file/b222e851d7c395223e37d.jpg"
+Sheeba_IMG = "https://telegra.ph/file/9346deb7942bf572158d6.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project via [Paypal](#) or by contacting @\
@@ -385,7 +385,7 @@ def owner_about_callback(update, context):
     query = update.callback_query
     if query.data == "owner_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Sheeba*
+            text=""" Hi..🤗 I'm *Stevia*
                  \nHere is the [owner](https://t.me/Developer_boy_d) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
